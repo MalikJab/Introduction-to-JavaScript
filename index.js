@@ -95,21 +95,54 @@ function foodCalc(weight, age){
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
-  
+function RPS(input){
+    // 0 = rock, 1 = paper, 2 = scissors
+      let int = 3;
+      let randomRps = Math.floor(Math.random() * Math.floor(int));
+    if (input == "scissors" && randomRps == 0){
+      return "you lose...";    
+    }
+    else if (input == "scissors" && randomRps == 1){
+      return "you win!";
+    }
+    else  if (input == "scissors" && randomRps == 2){
+      return "tie.";
+    }      
+    if (input == "paper" && randomRps == 0){
+        return "you win!";    
+      }
+      else if (input == "paper" && randomRps == 1){
+        return "tie.";
+      }
+      else  if (input == "paper" && randomRps == 2){
+        return "you lose...";
+      }
+      if (input == "rock" && randomRps == 0){
+          return "tie.";    
+        }
+        else if (input == "rock" && randomRps == 1){
+          return "you lose...";
+        }
+        else  if (input == "rock" && randomRps == 2){
+          return "you win!";
+        }
+  }
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
 
-
+function kmConvert(km){
+    return km *  0.62137119223733;
+}
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
-
+function ftToCm(feet){
+    return feet * 30.48;
+}
 
 
 /************************************************************** Task 6 **************************************************************/
@@ -117,7 +150,18 @@ function foodCalc(weight, age){
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
+function annoyingSong(number){
+    while (number > 0){
 
+        
+
+        number + "bottles of soda, take one down pass it around" + number + "bottles of soda on the wall";
+        number--;
+
+
+
+    }
+}
 
 
 
