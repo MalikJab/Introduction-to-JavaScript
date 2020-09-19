@@ -32,12 +32,13 @@ function multiply(a,b) {
   }
 
 
-
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-
+function dogAge(age) {
+    return age * 7;
+}
 
 
 
@@ -59,7 +60,31 @@ function multiply(a,b) {
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
+function foodCalc(weight, age){
 
+    if (age == 1 && weight <= 5){
+      weight = weight * .05;          
+    }
+    if (age == 1 && weight >= 6 && weight < 11){
+        weight = weight * .04;          
+    }
+    if (age == 1 && weight >= 11 && weight < 16){
+        weight = weight * .03;          
+    }
+    if (age == 1 && weight >= 15){
+        weight = weight * .02;          
+    }
+    if (age > .16 && age < .33){
+        weight = weight * .1;
+    }
+    if (age == .33 && age < .66){
+        weight = weight * .05;          
+    }
+    if (age == .583 && age < 1){
+        weight = weight * .04;          
+      }  
+    return weight;
+}
 
 
 
