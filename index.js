@@ -151,16 +151,15 @@ function ftToCm(feet){
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
 function annoyingSong(number){
-    while (number > 0){
-
-        
-
-        number + "bottles of soda, take one down pass it around" + number + "bottles of soda on the wall";
-        number--;
-
-
-
+  while (number > 0){
+      console.log(number + " bottles of soda on the wall");
+      console.log(number + " bottles of soda");
+      console.log("take one down pass it around");
+      number = number - 1;
+    if (number == 0){
+      console.log("no more bottles of soda on the wall")
     }
+  }
 }
 
 
@@ -174,7 +173,23 @@ function annoyingSong(number){
 //60s should be D 
 //and anything below 60 should be F
   
-
+function gradeCalc(inputNum) {
+  if (inputNum >= 90){
+    return "A";
+  } 
+  else if (inputNum < 60){
+    return "F";
+  }
+  else if (inputNum < 70){
+    return "D";
+  }
+  else if (inputNum < 80){
+    return "C";
+  }
+  else if (inputNum < 90){
+    return "B";
+  }  
+}
   
   
 
